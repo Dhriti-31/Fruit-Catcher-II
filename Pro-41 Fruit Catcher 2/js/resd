@@ -1,0 +1,8 @@
+if (gameState===PLAY){
+    score = score + Math.round(getFrameRate()/60);
+    ground.velocityX = -(6 + 3*score/100);
+  
+    if(obstaclesGroup.isTouching(trex)){
+        gameState = END;
+    }
+  }
