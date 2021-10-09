@@ -44,7 +44,6 @@ class Game{
                  drawSprites();
                  for(var plr in allPlayers){
                     
-                    
                      index = index+1;
                      x = 500-allPlayers[plr].distance;
                      y=500;
@@ -57,7 +56,20 @@ class Game{
                         textSize(20)
                        //add code to display the player's name on the respective basket.
                        text(allPlayers[plr].name, x-30, y+25);       
+                     
+
+//                     fill("white");
+//                    textSize(20);
+
+//                    text("Player 1: "+ allPlayers.player1.score,50,50);
+//                    text("Player 2: "+ allPlayers.player2.score,50,50);
                      }
+
+                     fill("white");
+                     textSize(20);
+
+                    text("Player 1: "+ allPlayers.player1.score,50,50);
+                    text("Player 2: "+ allPlayers.player2.score,50,50);
                 }
 
                 if (keyIsDown(RIGHT_ARROW) && player.index !== null) {
